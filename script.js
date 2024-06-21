@@ -16,7 +16,7 @@ async function enviarScript(scriptText){
 			(main.querySelector(`[data-testid="send"]`) || main.querySelector(`[data-icon="send"]`)).click();
 		}, 10);
 		
-		if(lines.indexOf(line) !== lines.length - 1) await new Promise(resolve => setTimeout(resolve, 250));
+		if(lines.indexOf(line) !== lines.length - 1) await new Promise(resolve => setTimeout(resolve, 10));
 	}
 	
 	return lines.length;
